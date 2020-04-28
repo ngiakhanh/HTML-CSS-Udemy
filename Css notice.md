@@ -28,6 +28,8 @@
 ### Nhớ canh đủ margin cho element mẹ của A và B.
 
 ## Diplay: inline-block
-### Nếu content element B dài hơn khoảng trống element A còn lại, sẽ xuống dòng.
+### Nếu content element B (width B) dài hơn khoảng trống element A còn lại, sẽ xuống dòng.
+
+### Phải set width B cho phù hợp.
 
 ## Display: flex ???
