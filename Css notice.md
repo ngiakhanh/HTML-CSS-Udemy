@@ -17,7 +17,7 @@
 
 ## Transition ở state A chỉ tác dụng khi effect vào state A, không có tác dụng khi effect từ state A đến state tiếp theo
 
-## Overflow và float: left
+## Overflow và float: left (tránh dùng)
 ### Trước khi float phải chỉnh width cho element A (và element B).
 ### Khi float: left element A, element B sẽ tự nhảy lên kế bên phải vs content tràn qua bên element A (overflow) và sẽ chiếm hết phần còn lại với điều kiện không set width cho element B.
 
@@ -26,3 +26,8 @@
 ### Nếu set width cho element B nó sẽ ko tự nhảy, phải force nó bằng cách thêm vào float: left. Nếu đủ chỗ hay dư, lúc này nó mới nhảy.
 
 ### Nhớ canh đủ margin cho element mẹ của A và B.
+
+## Diplay: inline-block
+### Nếu content element B dài hơn khoảng trống element A còn lại, sẽ xuống dòng.
+
+## Display: flex ???
