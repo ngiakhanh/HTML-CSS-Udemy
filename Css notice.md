@@ -16,3 +16,13 @@
 ## :visited sẽ nhảy vào thay thế :link ngay sau :active state kết thúc lần đầu
 
 ## Transition ở state A chỉ tác dụng khi effect vào state A, không có tác dụng khi effect từ state A đến state tiếp theo
+
+## Overflow và float: left
+### Trước khi float phải chỉnh width cho element A (và element B).
+### Khi float: left element A, element B sẽ tự nhảy lên kế bên phải vs content tràn qua bên element A (overflow) và sẽ chiếm hết phần còn lại với điều kiện không set width cho element B.
+
+### Lúc này display sẽ bị set thành block cho element A.
+
+### Nếu set width cho element B nó sẽ ko tự nhảy, phải force nó bằng cách thêm vào float: left. Nếu đủ chỗ hay dư, lúc này nó mới nhảy.
+
+### Nhớ canh đủ margin cho element mẹ của A và B.
