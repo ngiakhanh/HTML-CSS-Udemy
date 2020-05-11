@@ -9,13 +9,20 @@
 - :focus
 - :active
 
-## Quy tắc: :link/:visited thấp nhất, :active cao nhất
+### Quy tắc: :link/:visited thấp nhất, :active cao nhất
 
-## Khi xuất hiện 2 state :hover và :focus, độ ưu tiên sẽ theo thứ tự trong css -> nguyên nhân hay gộp hover và focus lại để tạo nên consistency OR bỏ state :focus
+### Khi xuất hiện 2 state :hover và :focus, độ ưu tiên sẽ theo thứ tự trong css -> nguyên nhân hay gộp hover và focus lại để tạo nên consistency OR bỏ state :focus
 
-## :visited sẽ nhảy vào thay thế :link ngay sau :active state kết thúc lần đầu
+### :visited sẽ nhảy vào thay thế :link ngay sau :active state kết thúc lần đầu
 
-## Transition ở state A chỉ tác dụng khi effect vào state A, không có tác dụng khi effect từ state A đến state tiếp theo
+### Transition ở state A chỉ tác dụng khi effect vào state A, không có tác dụng khi effect từ state A đến state tiếp theo
+
+## Transform: scale cho purpose animation: khi back về set scale(1.03) thay vì 1.0
+
+## Background-image: thêm hiệu ứng phủ 1 lớp đen mờ
+### background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
+
+### OR: background-color: black cho element mẹ; set opacity <1 cho element con. 
 
 ## Overflow và float: left (tránh dùng)
 ### Trước khi float phải chỉnh width cho element A (và element B).
@@ -27,7 +34,10 @@
 
 ### Nhớ canh đủ margin cho element mẹ của A và B.
 
+### dùng float xong phải gọi .clearfix cho element mẹ.
+
 ## Diplay: inline-block
+### Set cho cả A và B.
 ### Nếu content element B (width B) dài hơn khoảng trống element A còn lại, sẽ xuống dòng.
 
 ### Phải set width B cho phù hợp.

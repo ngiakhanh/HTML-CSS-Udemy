@@ -107,6 +107,21 @@ h2:after {
   display: block;
 }
 
+/* ----- LINKS -----*/
+a:link,
+a:visited {
+  text-decoration: none;
+  border-bottom: 1px solid #e67e22;
+  color: #e67e22;
+  transition: border-bottom 0.5s, color 0.3s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
 /* ----- BUTTON ------- */
 
 .btn:link,
@@ -159,6 +174,7 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   width: 100%;
 }
 
@@ -291,8 +307,84 @@ header {
   margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/* --------------------------------------------------------*/
+/* CITIES */
+/* --------------------------------------------------------*/
+.city {
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.city img {
+  height: 200px;
+  width: auto;
+}
+
+.city-info {
+  margin-bottom: 15px;
+}
+
+.city-info .text {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.city-info ion-icon {
+  vertical-align: -3px;
+}
+
+/* --------------------------------------------------------*/
+/* TESTIMONIALS */
+/* --------------------------------------------------------*/
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/back-customers.jpg);
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+blockquote {
+  line-height: 145%;
+  padding: 2%;
+  font-style: italic;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 500%;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -3px;
+}
+
+cite img {
+  height: 45px;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
