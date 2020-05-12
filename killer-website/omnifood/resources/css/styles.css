@@ -19,6 +19,7 @@ html {
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 .clear-fix {
@@ -75,7 +76,6 @@ h2 {
 
 h3 {
   font-size: 110%;
-  margin-bottom: 30px;
   height: 46px;
   margin-top: 16px;
 }
@@ -208,6 +208,15 @@ header {
   margin-top: 20px;
 }
 
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-top: 5px 0;
+}
+
+/* Main nav */
 .main-nav {
   float: right;
   list-style: none;
@@ -233,6 +242,34 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+
+/* Stick nav */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 1px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav {
+  margin-top: 15px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 16px 0;
+  color: #555;
+}
+
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block; /*overwrite display: none and since it's already float:left*/
 }
 
 /* --------------------------------------------------------*/
@@ -470,7 +507,7 @@ cite img {
 }
 
 /* --------------------------------------------------------*/
-/* FORM*/
+/* FORM */
 /* --------------------------------------------------------*/
 
 .contact-form {
@@ -501,7 +538,7 @@ input[type="checkbox"] {
 }
 
 /* --------------------------------------------------------*/
-/* FOOTER*/
+/* FOOTER */
 /* --------------------------------------------------------*/
 
 footer {
@@ -577,4 +614,23 @@ footer p {
   color: #888;
   text-align: center;
   margin-top: 20px;
+}
+
+/* --------------------------------------------------------*/
+/* ANIMATIONS */
+/* --------------------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-4 {
+  animation-duration: 1s;
+}
+
+.animate__animated {
+  opacity: 1;
 }
