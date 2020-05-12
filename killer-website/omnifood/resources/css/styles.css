@@ -136,6 +136,8 @@ a:active {
 .btn:link,
 .btn:visited,
 input[type="submit"] {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 100%;
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;

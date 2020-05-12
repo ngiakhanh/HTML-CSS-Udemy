@@ -47,4 +47,6 @@
 ### Sẽ có khoảng space khoảng 4px giữa các li trong 1 ul và giữa các ul với nhau: set margin-right: -4px; margin-bottom: -4px;
 <https://css-tricks.com/fighting-the-space-between-inline-block-elements>
 
+### Sẽ nát khi responsive khi compare vs float:left
+
 ## Display: flex ???
