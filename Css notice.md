@@ -22,7 +22,9 @@
 ## Background-image: thêm hiệu ứng phủ 1 lớp đen mờ
 ### background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
 
-### OR: background-color: black cho element mẹ; set opacity <1 cho element con. 
+### OR: background-color: black cho element mẹ; set opacity < 1 cho element con.
+
+## Quoting: <https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/>
 
 ## Overflow và float: left (tránh dùng)
 ### Trước khi float phải chỉnh width cho element A (và element B).
@@ -41,5 +43,8 @@
 ### Nếu content element B (width B) dài hơn khoảng trống element A còn lại, sẽ xuống dòng.
 
 ### Phải set width B cho phù hợp.
+
+### Sẽ có khoảng space khoảng 4px giữa các li trong 1 ul và giữa các ul với nhau: set margin-right: -4px; margin-bottom: -4px;
+<https://css-tricks.com/fighting-the-space-between-inline-block-elements>
 
 ## Display: flex ???
