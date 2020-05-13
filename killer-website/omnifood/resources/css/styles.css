@@ -244,6 +244,16 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile-nav */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  display: none;
+  cursor: pointer;
+  font-size: 200%;
+  color: white;
+}
+
 /* Stick nav */
 .sticky {
   position: fixed;
@@ -270,6 +280,11 @@ header {
 }
 .sticky .logo-black {
   display: block; /*overwrite display: none and since it's already float:left*/
+}
+
+.sticky .mobile-nav-icon {
+  margin-top: 9px;
+  color: #555;
 }
 
 /* --------------------------------------------------------*/
